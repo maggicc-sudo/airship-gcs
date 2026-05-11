@@ -1,27 +1,5 @@
-# Replit 配置 - 临近空间飞艇智能飞行决策系统
-# 项目入口在 frontend/ 子目录
-
 language = "nodejs"
-run = "cd frontend && npm install && npm run dev -- --host 0.0.0.0"
+run = "cd frontend && npm run dev -- --host 0.0.0.0"
 
 [nix]
 channel = "stable-24_05"
-
-[env]
-NODE_ENV = "development"
-
-[gitHubImport]
-requiredFiles = [".replit", "frontend/package.json"]
-
-[unitTest]
-language = "nodejs"
-pattern = "frontend/tests/**/*.test.{ts,js}"
-
-[languages.nodejs]
-pattern = "**/*.{js,ts,vue,css,scss}"
-
-[nix]  
-channel = "stable-24_05"
-
-[languages.nodejs.syntaxHighlighting]
-patterns = ["frontend/src/**/*"]
